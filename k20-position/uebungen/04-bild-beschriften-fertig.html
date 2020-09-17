@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html lang="de">
+  
+  <head>
+  
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    
+    <title>Abbildungen beschriften - Einstieg in HTML + CSS</title>
+    
+    <style>
+      
+      * { box-sizing: border-box; }
+
+      body {
+        font-family: "-apple-system", BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;        
+        max-width: 780px; 
+        padding: 1rem; 
+        margin: auto; 
+      }
+
+      figure {
+        position: relative; 
+        
+        max-width: 400px;
+        margin: auto; 
+      }
+      
+      figure img {
+        display: block; 
+        
+        max-width: 100%; 
+        height: auto; 
+        box-shadow: 0 3px 19px 0 rgba(51, 51, 51, 0.4); 
+      }
+      
+      figcaption {
+        position: absolute; 
+        left: 0; 
+        right: 0; 
+        bottom: 0;
+        
+        text-align: center; 
+        color: white;
+        background: rgba(50,50,50,0.8); 
+        padding: 0.5rem;
+      }
+      
+    </style>
+  
+  </head>
+
+  <body>
+       
+      <figure>
+
+        <img src="hamburg-blankenese-treppenviertel-800.jpg" 
+             alt="Foto mit Blick auf Treppenviertel und Elbe in Hamburg-Blankenese" 
+             width="400" 
+             height="300">
+        
+        <figcaption>Blick auf das Treppenviertel in Blankenese</figcaption>
+        
+      </figure>            
+    
+  </body>
+</html>
+
+
+
+
+
+

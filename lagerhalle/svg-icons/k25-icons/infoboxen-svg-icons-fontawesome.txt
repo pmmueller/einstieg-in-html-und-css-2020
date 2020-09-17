@@ -1,0 +1,29 @@
+Kapitel 25 - Flexible Icons 
+
+Startseite - Infoboxen - SVG-Icons von FontAwesome.com 
+
+Die folgenden drei Icons werden im Buch verwendet: 
+
+1. Infobox "News"
+https://fontawesome.com/icons/rss?style=solid
+
+2. Infobox "Über uns"
+https://fontawesome.com/icons/users?style=solid
+
+3. Infobox "Kontakt"
+https://fontawesome.com/icons/at?style=solid
+
+Sie können die im Buch verwendeten Icons als SVG-Datei herunterladen und dann die Beispiele damit durcharbeiten. 
+
+-
+Creators: 
+FontAwesome.com 
+
+-
+License (wird beim Download als SVG angezeigt. Stand 2020-06-19): 
+
+Creative Commons Attribution 4.0 International 
+
+You must give appropriate credit, provide a link to the license (https://fontawesome.com/license), and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
+
+--- eof --- 

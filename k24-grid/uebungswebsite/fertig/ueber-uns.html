@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="de" id="top">
+ 
+  <head>
+    <meta charset="utf-8">
+    
+    <title>Über uns – Einführung in HTML + CSS</title>
+    <meta name="description" content="Beschreibung dieser Webseite"> 
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+    <link href="css/style.css" rel="stylesheet">
+
+  </head>
+
+  <body class="seite-ueber-uns">
+
+    <header class="site-header">
+      <div class="inside">
+      
+        <h1 class="site-logo">
+          <a href="index.html">
+            <img src="bilder/html+css-logo-444.png"
+                 alt="HTML + CSS" 
+                 width="222" 
+                 height="33">    
+          </a>
+        </h1>
+
+        <p class="site-slogan">Webseiten erstellen und gestalten</p>
+        
+      </div>      
+    </header>
+
+    <nav class="site-nav">
+      <div class="inside">
+
+        <button class="menubutton" onclick="this.classList.toggle('showmenu')">Menü</button>        
+      
+        <ul>	
+          <li><a href="index.html">Startseite</a></li>	
+          <li><a href="news.html">News</a></li>	
+          <li class="current"><a href="ueber-uns.html">Über uns</a></li>	
+          <li><a href="kontakt.html">Kontakt</a></li>	
+        </ul>	
+
+      </div>
+    </nav>
+
+    <main class="site-content" id="content">
+      <div class="inside">
+
+        <section class="content-intro float-umschliessen">
+
+          <h2>Über uns</h2>
+
+          <figure class="float-rechts">
+            
+            <img src="bilder/waldemar-weber-300.gif" 
+                 alt="Waldemar Weber" 
+                 width="150"
+                 height="150">
+            
+            <figcaption>Der Autor</figcaption>
+          
+          </figure>
+
+          <p>Immer dasselbe. Das Layout ist fertig, der Text lässt auf sich warten. Damit das Layout nun nicht nackt im Raume steht und sich klein und leer vorkommt, springe ich ein: der Blindtext.</p>
+
+          <p>Genau zu diesem Zwecke erschaffen, immer im Schatten meines großen Bruders »Lorem Ipsum«, freue ich mich jedes Mal, wenn Sie ein paar Zeilen lesen. Denn esse est percipi - Sein ist wahrgenommen werden.</p>
+          
+
+        </section>     
+        
+        <section class="">
+            <h2>Das Team</h2>
+            <ul class="mitglieder">
+              <li class="mitglied">
+                <h3>Autor</h3> 
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis elit sed nisi lobortis vestibulum non et orci.</p>
+              </li> 
+              <li class="mitglied">
+                <h3>Fachlektorin</h3> 
+                <p>Nunc nisi justo, placerat id elit eget, ullamcorper dictum mauris. Donec molestie, orci et tristique lacinia, nisl dolor volutpat urna, at euismod eros orci ut massa.</p>
+              </li> 
+              <li class="mitglied">
+                <h3>Lektorat</h3> 
+                <p>Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi nunc neque, ullamcorper quis mi non,</p>
+              </li> 
+               <li class="mitglied">
+                <h3>Korrektorat</h3> 
+                <p>Duis cursus, quam id elementum blandit, turpis nisi consectetur velit, dignissim dapibus lectus nunc nec libero. </p>
+              </li> 
+              <li class="mitglied">
+                <h3>Herstellung</h3> 
+                <p>Sed purus quam, molestie eu tortor sagittis, ultricies semper tortor. Vivamus venenatis imperdiet mauris nec rutrum. </p>
+              </li> 
+              <li class="mitglied">
+                <h3>Vertrieb</h3> 
+                <p>Cras vel nibh varius, molestie est ac, iaculis erat. Suspendisse convallis massa eget erat porttitor, eu dictum nibh vestibulum. </p>
+              </li> 
+            </ul>
+        </section>
+        
+
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="inside">
+
+         <nav class="meta-nav">
+
+          <ul>
+            <li><a href="impressum.html">Impressum</a></li>
+            <li><a href="datenschutz.html">Datenschutz</a></li>
+            <li><a href="#top">Nach oben</a></li>
+          </ul>
+
+        </nav>
+
+      </div>
+    </footer>
+
+  </body>
+
+</html>

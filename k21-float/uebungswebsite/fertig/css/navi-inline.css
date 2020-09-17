@@ -1,0 +1,57 @@
+/* ================================
+
+navi-inline.css  
+
+- Gestaltung der Hauptnavigation  
+- Hervorhebung des aktuellen Menüpunktes 
+- Gestaltung der Meta-Navigation im Fußbereich 
+- beide basieren auf display: inline  
+
+================================ */
+
+/** 
+  * 1. Die Hauptnavigation (K05 und K15)
+  */ 
+
+.site-nav ul {
+  padding: 0; 
+  margin: 0; 
+}
+
+.site-nav li {
+	display: inline;
+	margin-right: 0.5rem;
+}
+
+
+.site-nav a {
+  color: white; 
+  text-decoration: none; 
+}
+
+/** 
+  * 2. Die Meta-Navigation im Fußbereich (K05 und K15)
+  */ 
+
+.meta-nav ul {
+  padding: 0; 
+  margin: 0; 
+}
+.meta-nav li {
+	display: inline;
+	margin-right: 0.5rem;
+}
+
+
+/** 
+  * 3. Aktueller Menüpunkt (gilt für beide Navigationen, K05)
+  */ 
+
+.current a {
+  text-decoration: underline; 
+}
+
+
+
+
+/* eof */

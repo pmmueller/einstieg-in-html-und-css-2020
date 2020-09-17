@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html lang="de">
+  
+  <head>
+  
+    <meta charset="utf-8">
+    
+    <title>z-index - Videokurs zu HTML + CSS</title>
+    <meta name="description" content="In diesem Videokurs lernen Sie das Erstellen und Gestalten von Webseiten mit HTML und CSS.">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    
+    <style>
+      * { box-sizing: border-box; }
+  
+      body {
+        font-family: sans-serif; 
+        background: #eee; 
+        color: black; 
+        padding: 0; 
+        margin: 0; 
+      }
+ 
+      div {
+        position: absolute; 
+        
+        background: white; 
+        width: 70%; 
+        height: 5rem; 
+        padding: 1rem; 
+        border: 3px solid #800; 
+        margin: 0.5rem; 
+      }
+      
+      
+      div.eins {
+        top: 0; 
+        left: 0; 
+        background: white;
+      }
+      
+      div.zwei {
+        top: 4rem; 
+        left: 4rem; 
+        background: #e3c0c0;
+      }
+      
+      div.drei {
+        top: 8rem; 
+        left: 8rem; 
+        background: #c47d7d; 
+      }
+      
+      /* z-index für die drei Boxen  */
+      /*
+      div.eins { z-index: 30; }
+      
+      div.zwei { z-index: 20; }
+      
+      div.drei { z-index: 10; }
+      */
+      
+  </style>  
+    
+  </head>
+
+  <body>
+  
+    <div class="eins">Box 1</div>
+    <div class="zwei">Box 2</div>
+    <div class="drei">Box 3</div>
+    
+  </body>
+</html>
+
+
+
+
+
+

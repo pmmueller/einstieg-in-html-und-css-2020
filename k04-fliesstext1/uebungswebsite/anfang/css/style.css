@@ -1,0 +1,11 @@
+/* Stand k04/uebungswebsite/anfang */ 
+
+body {
+  background-color: floralwhite; 
+  color: black; 
+} 
+header {
+  background-color: steelblue; 
+  color: white; 
+  padding: 1rem; 
+} 

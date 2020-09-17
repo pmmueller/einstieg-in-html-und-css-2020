@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="de">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Eine Tabelle mit grundlegender Gestaltung – Einführung in HTML + CSS</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    
+    <!-- CSS für diese Übungsseite --> 
+    <style>
+      
+      table { 
+        border-spacing: 1px; 
+        /* border-collapse: collapse; */ 
+      }
+  
+      thead { 
+        background-color: lightgrey;
+      }
+      
+      tbody { 
+        background-color: whitesmoke;
+      }
+      
+      tfoot { 
+        font-size: smaller; 
+      }
+            
+      th, td {
+        padding: 0.5rem 1rem;
+        text-align: left; /* th wird sonst zentriert */ 
+        vertical-align: top; /* Ausrichtung oben (Standard = middle) */
+      }
+
+    </style>
+
+  </head>
+
+  <body>
+    
+    <h1>Eine Tabelle mit grundlegender Gestaltung</h1>
+
+    <table>
+      
+      <thead>
+        <tr>
+          <th>Nr. </th>
+          <th>Album</th>
+          <th>Interpret</th>
+          <th>Jahr</th>
+        </tr>
+      </thead>
+      
+      <tbody>
+        <tr>
+          <td>1.</td>
+          <td>Sgt. Pepper’s Lonely Hearts Club Band</td>
+          <td>The Beatles</td>
+          <td>1967</td>
+        </tr>
+        <tr>
+          <td>2.</td>
+          <td>Pet Sounds</td>
+          <td>The Beach Boys</td>
+          <td>1966</td>
+        </tr>
+        <tr>
+          <td>3.</td>
+          <td>Revolver</td>
+          <td>The Beatles</td>
+          <td>1966</td>
+        </tr>
+        <tr>
+          <td>4.</td>
+          <td>Highway 61 Revisited</td>
+          <td>Bob Dylan</td>
+          <td>1965</td>
+        </tr>
+        <tr>
+          <td>5.</td>
+          <td>Rubber Soul</td>
+          <td>The Beatles</td>
+          <td>1965</td>
+        </tr>
+        <tr>
+          <td>6.</td>
+          <td>What's Going On</td>
+          <td>Marvin Gaye</td>
+          <td>1971</td>
+        </tr>        
+        <tr>
+          <td>7.</td>
+          <td>Exile on Main Street</td>
+          <td>The Rolling Stones</td>
+          <td>1972</td>
+        </tr>        
+        <tr>
+          <td>8.</td>
+          <td>London Calling</td>
+          <td>The Clash</td>
+          <td>1980</td>
+        </tr>      
+        <tr>
+          <td>9.</td>
+          <td>Blonde on Blonde</td>
+          <td>Bob Dylan</td>
+          <td>1966</td>
+        </tr>     
+        <tr>
+          <td>10.</td>
+          <td>The White Album</td>
+          <td>The Beatles</td>
+          <td>1968</td>
+        </tr>        
+      </tbody>
+      
+      <tfoot>
+        <tr>
+          <td colspan="4">
+            <a href="https://www.rollingstone.com/music/music-lists/500-greatest-albums-of-all-time-156826/" target="_blank" rel="noreferrer noopener">Rolling Stone - 500 Greatest Albums of All Time</a>   
+          </td>
+        </tr>
+      </tfoot>
+      
+    </table> 
+
+
+  </body>
+
+</html>

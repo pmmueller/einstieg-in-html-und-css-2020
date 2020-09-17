@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="de">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Semantik h1 vs. div – Einführung in HTML + CSS</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    
+    <!-- CSS für diese Übungsseite --> 
+    <style>
+    
+      .wrapper {
+        background-color: whitesmoke; 
+        padding: 1rem; 
+      } 
+
+      main, aside {
+        background-color: white; 
+        padding: 1rem; 
+        margin-bottom: 1rem; 
+      }
+      
+    
+    </style>
+    
+
+  </head>
+
+  <body>
+    
+    <header>
+      
+      <h1>Übung zum Wrapper </h1>
+      
+      <p>Ein div mit der Klasse wrapper umschließt den Hauptinhalt main und das aside darunter.</p>
+
+    </header>
+
+    
+    <div class="wrapper">
+      
+      <main>
+      
+        <h2>Hauptinhaltsbereich main</h2>
+        
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. </p>
+      
+      </main>
+      
+      <aside class="linklisten">
+
+          <h2>aside mit Linklisten</h2>
+
+          <section class="tools">
+
+            <h3>Tools</h3>
+
+            <ul>
+              <li><a href="http://brackets.io/" target="_blank" rel="noreferrer noopener">Brackets</a></li>
+              <li><a href="http://www.blindtextgenerator.de/" target="_blank" rel="noreferrer noopener">Blindtextgenerator</a></li>         
+              <li><a href="https://validator.w3.org/" target="_blank" rel="noreferrer noopener">HTML-Validator</a></li>
+            </ul>     
+
+          </section>
+
+          <section class="referenzen">
+
+            <h3>Referenzen</h3>
+
+            <ul>
+              <li><a href="https://developer.mozilla.org/de/docs/Web/HTML/Element" target="_blank" rel="noreferrer noopener">HTML-Elemente</a></li>
+              <li><a href="https://developer.mozilla.org/de/docs/Web/HTML/Attributes" target="_blank" rel="noreferrer noopener">HTML-Attribute</a></li>
+              <li><a href="https://wiki.selfhtml.org/wiki/Grafik/Farbpaletten" target="_blank" rel="noreferrer noopener">Farbnamen</a></li>
+            </ul>
+
+          </section>
+
+        </aside>
+            
+    </div>
+    
+
+
+  </body>
+
+</html>

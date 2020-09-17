@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="de" id="top">
+ 
+  <head>
+    <meta charset="utf-8">
+    
+    <title>Kontakt – Einführung in HTML + CSS</title>
+    <meta name="description" content="Beschreibung dieser Webseite"> 
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+    <link href="css/style.css" rel="stylesheet">
+
+  </head>
+
+  <body class="seite-kontakt">
+
+    <header class="site-header">
+      
+      <h1 class="site-logo">
+        <a href="index.html">
+          <img src="bilder/html+css-logo-444.png"
+               alt="HTML + CSS" 
+               width="222" 
+               height="33">    
+        </a>
+      </h1>
+
+      <p class="site-slogan">Webseiten erstellen und gestalten</p>
+      
+    </header>
+
+    <nav class="site-nav">
+      
+      <ul>	
+        <li><a href="index.html">Startseite</a></li>	
+        <li><a href="news.html">News</a></li>	
+        <li><a href="ueber-uns.html">Über uns</a></li>	
+        <li class="current"><a href="kontakt.html">Kontakt</a></li>	
+      </ul>	
+
+    </nav>
+
+    <main class="site-content" id="content">
+
+      <section class="content-intro">
+
+        <h2>Kontakt</h2>
+        
+        <p>Fragen? Anregungen? Auf dieser Seite finden Sie Möglichkeiten, mit uns in Kontakt zu treten.</p>
+
+      </section>      
+      
+      <section class="kontaktdaten">
+        <h2>Kontaktdaten</h2>
+
+        <address>
+        <p>Waldemar Weber <br> 
+        Kästchenweg 12 <br>
+        01234 Boxberg </p>	
+        
+        <p>Tel: <a href="tel:010.634.5789">010 634 5789</a></p> 
+        </address>
+      
+      </section>
+      
+      <section class="kontaktformular" id="kontaktformular">
+
+        <h2>Kontaktformular</h2>
+
+        <p>Mit dem folgenden Formular können Sie uns eine Nachricht schicken. Bitte füllen Sie alle Felder aus.</p>
+
+        <form action="#" method="post">
+
+          <div>
+            <label for="besuchername">Ihr Name: </label>
+            <input type="text" id="besuchername" name="besuchername" required>
+          </div>
+
+          <div>
+            <label for="besuchermail">Ihre E-Mail: </label>
+            <input type="email" id="besuchermail" name="besuchermail" required>
+          </div>   
+
+          <div>
+            <label for="nachricht">Ihre Nachricht: </label>
+            <textarea id="nachricht" name="nachricht" cols="30" rows="5" required></textarea>
+          </div>
+
+          <div>
+            <label for="dsgvo">DSGVO-Einverständnis</label>
+            <small><label><input type="checkbox" id="dsgvo" name="dsgvo" required>Mit der Nutzung dieses Formulars erklären Sie sich mit der Speicherung und Verarbeitung Ihrer Daten durch diese Website einverstanden</label> (<a href="#" target="_blank" rel="noreferrer noopener">Datenschutzerklärung</a>).</small>
+          </div>
+
+          <button type="submit" value="Abgeschickt">Abschicken</button>
+
+        </form>        
+
+      </section>
+
+    </main>
+
+    <footer class="site-footer">
+
+      <nav class="meta-nav">
+        <ul class="meta-nav-list">
+          <li><a href="impressum.html">Impressum</a></li>
+          <li><a href="datenschutz.html">Datenschutz</a></li>
+          <li><a href="#top">Nach oben</a></li>
+        </ul>
+      </nav>
+
+    </footer>
+
+  </body>
+
+</html>

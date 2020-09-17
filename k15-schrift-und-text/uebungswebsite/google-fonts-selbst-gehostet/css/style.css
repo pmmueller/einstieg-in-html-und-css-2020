@@ -1,0 +1,172 @@
+/** Stand k15/uebungswebsite/google-fonts-selbst-gehostet/ 
+  *
+  * Google Webfonts offline nutzen 
+  * Code generiert von https://google-webfonts-helper.herokuapp.com/ 
+  *
+ **/ 
+
+/* source-sans-pro-regular - latin */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'),
+       url('../fonts/source-sans-pro-v13-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/source-sans-pro-v13-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* source-sans-pro-italic - latin */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Source Sans Pro Italic'), local('SourceSansPro-Italic'),
+       url('../fonts/source-sans-pro-v13-latin-italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/source-sans-pro-v13-latin-italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* source-sans-pro-700 - latin */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Source Sans Pro Bold'), local('SourceSansPro-Bold'),
+       url('../fonts/source-sans-pro-v13-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/source-sans-pro-v13-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* Ende Google Webfonts */ 
+
+
+html { 
+  scroll-behavior: smooth; 
+}
+
+.site-nav li {
+	display: inline;
+	margin-right: 0.5rem;
+}
+
+.site-nav {
+	background-color: #333;
+  color: white; 
+	padding: 0.5rem;
+  margin: 1rem 0; 
+}
+.site-nav ul {
+  padding: 0; 
+  margin: 0; 
+}
+
+.site-nav a {
+  color: white; 
+  text-decoration: none; 
+}
+
+.site-footer {
+  background-color: #333;
+  color: white; 
+  text-align: right; 
+  padding: 0.5rem;
+  margin-top: 1rem; 
+}
+
+.site-footer a {
+  color: white; 
+  text-decoration: none; 
+}
+
+.meta-nav ul {
+  padding: 0; 
+  margin: 0; 
+}
+.meta-nav li {
+	display: inline;
+	margin-right: 0.5rem;
+}
+
+.site-header h1 { 
+  margin-bottom: 0; 
+}
+.site-header p {
+  margin-top: 0; 
+}
+
+
+/* Grundlegende Gestaltung des Abschnitts mit den Infoboxen */ 
+.infoboxen {
+  background-color: #eee; 
+  padding: 1rem; 
+  margin-bottom: 1rem; 
+}
+
+.infobox {
+  text-align: center; 
+  background-color: white; 
+  padding: 1rem;
+  margin: 1rem; 
+}
+
+
+/* Grundlegende Gestaltung - aktueller Link in der Navigation */ 
+
+.current a {
+  text-decoration: underline; 
+}
+
+
+/* Grundlegende Gestaltung der Inhalte auf der Seite News */
+
+.beitragsliste h3, 
+.linklisten h3 {
+  padding-top: 0.5rem; 
+  border-top: 1px solid #eee; 
+  margin-bottom: 0.25rem; 
+}
+.beitragsliste h3 a { 
+  color: #333; 
+}
+.beitragsliste article, 
+.linklisten section { 
+  margin-bottom: 3rem; 
+}
+.beitragsinfo { 
+  color: #999; 
+}
+
+
+/* Grundlegende Gestaltung von Kontaktdaten und Kontaktformular */ 
+
+address {
+  font-style: normal; 
+}
+
+.kontaktformular form {
+  max-width: 400px; 
+  background-color: #eee; 
+  padding: 1rem; 
+}
+
+.kontaktformular div {
+  margin-bottom: 1rem; 
+}
+
+.kontaktformular label { 
+  cursor: pointer; 
+}      
+
+.kontaktformular label[for] { 
+  display: block; 
+}      
+      
+.kontaktformular button {
+  background-color: #0b74b8;
+  color: white; 
+  padding: 0.5rem; 
+  border: none;   
+  font-size: inherit; 
+  cursor: pointer; 
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif; 
+} 
+

@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="de">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Geschwisterselektoren – Einführung in HTML + CSS</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    
+    <!-- CSS für diese Übungsseite --> 
+    <style>
+  
+      body {
+        font-family: sans-serif; 
+        line-height: 1.7; 
+        max-width: 60ch; 
+        margin: 0 auto; 
+      }
+    
+
+      header h1 { margin-bottom: 0.5rem;}
+      
+      header > p.teaser { font-style: italic; margin: 0;}
+      
+      code { margin: 0 0.5rem; background: #eee; font-size: 1.1rem;}
+
+      body > p { 
+        padding-right: 0.5rem; 
+        padding-left: 0.5rem;
+      }
+
+      header + p { border-left: 5px solid steelblue; }
+
+      header ~ p { border-right: 5px solid hotpink; }    
+
+    </style>
+    
+
+  </head>
+
+  <body>
+  
+    <header>
+      <h1>Geschwisterselektoren</h1> 
+      <p class="teaser">Diesen Absatz finden beide Geschwisterselektoren nicht.</p>
+    </header>
+
+    <p>Diesen Absatz finden beide Selektoren. Darum hat er links und rechts eine Rahmenlinie. Die linke kommt vom Selektor mit dem Pluszeichen <code>+</code>, die rechte vom Selektor mit der Tilde <code>~</code>.  </p> 
+
+    <p>Diesen Absatz findet nur der Selektor mit der Tilde <code>~</code>. Darum hat er nur rechts eine Rahmenlinie. Der Selektor mit dem Pluszeichen <code>+</code> findet den Absatz nicht, weil er nur benachbarte Geschwister auswählt. </p> 
+
+  </body>
+
+</html>

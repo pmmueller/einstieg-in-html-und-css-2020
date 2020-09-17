@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="de">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Ausklappbare Inhalte – Einführung in HTML + CSS</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    
+    <!-- CSS für diese Übungsseite --> 
+    <style>
+
+      details {
+        background-color: whitesmoke;    
+        padding: 1rem; 
+        border: 1px solid lightgrey; 
+        margin-bottom: 1rem;
+      }    
+      
+      summary {
+        cursor: pointer; 
+        font-weight: bold; 
+        font-size: 1.25rem; 
+      }
+
+      /** 
+        * summary:focus = eventuelle Umrandung für Elemente mit dem Fokus entfernen 
+        * details[open] = wenn das Element geöffnet ist (ist ein Attributselektor) 
+        */ 
+      /*
+      summary:focus { outline: none; }      
+      details[open] { border-color: darkred; }
+      */
+        
+    </style>
+    
+
+  </head>
+
+  <body>
+    
+    <h1>Ausklappbare Inhalte</h1>
+
+	<details>
+
+		<summary>HTML</summary>
+
+		<p>Die <em>HyperText Markup Language</em> ist eine textbasierte Auszeichnungssprache zur Strukturierung elektronischer Dokumente.</p>
+	</details>
+
+	<details>	
+
+		<summary>CSS</summary> 
+
+		<p>Die <em>Cascading Style Sheets</em> sind eine Sprache zur Gestaltung von HTML.</p>
+	</details>
+
+	<details>
+
+		<summary>JS</summary>
+
+		<p><em>JavaScript</em> ist eine Skriptsprache, um die Möglichkeiten von HTML und CSS zu erweitern.</p>
+	</details>
+
+  </body>
+
+</html>

@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="de" id="top">
+ 
+  <head>
+    <meta charset="utf-8">
+    <title>Responsive Bilder – Einführung in HTML + CSS</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+    
+    <style>
+      * { box-sizing: border-box; }    
+
+      body {
+        font-family: "-apple-system", BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        background-color: white; 
+        color: black; 
+        max-width: 960px; 
+        padding: 1rem; 
+        margin: auto;  
+      }  
+    
+      img {
+        display: block; 
+        max-width: 100%; 
+        height: auto; 
+      }
+      
+    </style>
+    
+    
+  </head>
+
+  <body>
+    
+    <img src="bilder/hafen-klein.jpg" 
+         srcset="bilder/hafen-klein.jpg 1024w, 
+                 bilder/hafen-gross.jpg 2048w"
+         sizes="100vw"
+         alt="Der Noorderhaven in Groningen">
+   
+  </body>
+
+</html>

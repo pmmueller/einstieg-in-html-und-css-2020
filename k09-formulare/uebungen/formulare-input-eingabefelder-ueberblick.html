@@ -1,0 +1,88 @@
+
+<!doctype html>
+<html lang="de">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Formulare - einzeilige Eingabefelder – Einführung in HTML + CSS</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    
+    <!-- CSS für diese Übungsseite --> 
+    <style>
+    
+      form > div {
+        margin-bottom: 2rem; 
+      }
+    
+      label {
+        display: block; 
+        cursor: pointer;
+        font-weight: bold; 
+      }
+      
+      input {
+        font: inherit; 
+        padding: 0.25rem; 
+      }
+      
+      code {
+        background-color: whitesmoke; 
+        padding: 0 0.25rem; 
+      }
+      
+    </style>
+    
+
+  </head>
+
+  <body>
+    
+    <h1>Formulare - einzeilige Eingabefelder</h1>
+
+    <form>
+    
+      <div>
+        <label>Textfeld</label>
+        <input type="text" placeholder="Beliebiger Text"> 
+        <code>&lt;input type="text"&gt;</code>
+      </div>
+      
+      <div>
+        <label>E-Mail-Adresse</label> 
+        <input type="email" placeholder="mail@domain.de"> 
+        <code>&lt;input type="email"&gt;</code>
+      </div>
+      
+      <div>
+        <label>Webadresse</label> 
+        <input type="url" placeholder="https://domain.de/">
+        <code>&lt;input type="url"&gt;</code>
+      </div>
+      
+      <div>
+        <label>Telefonnummer</label> 
+        <input type="tel" placeholder="+49 228 42150-0">
+        <code>&lt;input type="tel"&gt;</code>
+      </div>
+      
+      <div>
+        <label>Suche</label> 
+        <input type="search" placeholder="Suchen..."> 
+        <code>&lt;input type="search"&gt;</code>
+      </div>
+      
+      <div>
+        <label>Passwort</label> 
+        <input type="password" placeholder="Passwort"> 
+        <code> &lt;input type="password"&gt;</code>
+      </div>
+      
+    </form>
+
+    
+
+
+  </body>
+
+</html>

@@ -1,0 +1,11 @@
+/* Stand k03/uebungswebsite/fertig/ */ 
+
+body {
+  background-color: floralwhite; 
+  color: black; 
+} 
+header {
+  background-color: steelblue; 
+  color: white; 
+  padding: 1rem; 
+} 

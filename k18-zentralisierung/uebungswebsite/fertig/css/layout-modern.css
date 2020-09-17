@@ -1,0 +1,32 @@
+/* ================================
+
+   layout-modern.css  
+
+   ================================ */
+
+html { 
+  background-color: transparent; 
+}
+
+body { 
+  max-width: none; 
+  padding: 0; 
+  margin: 0; 
+}
+
+.inside {
+  max-width: 600px; 
+  padding: 0 1rem; 
+  margin: 0 auto; 
+}
+
+.site-header,
+.site-nav,
+.site-content,
+.site-footer {
+  padding-left: 0; 
+  padding-right: 0; 
+}
+
+
+/* eof */

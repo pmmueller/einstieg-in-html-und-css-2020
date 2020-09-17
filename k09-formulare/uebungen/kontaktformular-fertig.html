@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="de">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Kontaktformular – Einführung in HTML + CSS</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    
+    <!-- CSS für diese Übungsseite --> 
+    <style>
+
+      form {
+        max-width: 400px;
+        background-color: whitesmoke; 
+        padding: 1rem; 
+      }
+
+      div {
+        margin-bottom: 1rem; 
+      }
+
+      label { 
+        cursor: pointer; 
+      }      
+
+      label[for] { 
+        display: block; 
+      }      
+
+      button {
+        font-size: inherit; 
+        background-color: gray;
+        color: white; 
+        padding: 0.5rem; 
+        border: none;   
+      }      
+
+    </style>
+    
+
+  </head>
+
+  <body>
+    
+    <h1>Kontaktformular</h1>
+
+    <form action="#" method="post">
+    
+      <div>
+        <label for="besuchername">Ihr Name: </label>
+        <input type="text" id="besuchername" name="besuchername" required>
+      </div>
+
+      <div>
+        <label for="besuchermail">Ihre E-Mail: </label>
+        <input type="email" id="besuchermail" name="besuchermail" required>
+      </div>   
+
+      <div>
+        <label for="nachricht">Ihre Nachricht: </label>
+        <textarea id="nachricht" name="nachricht" cols="30" rows="5" required></textarea>
+      </div>
+      
+      <div>
+        <label for="dsgvo">DSGVO-Einverständnis</label>
+        <small><label><input type="checkbox" id="dsgvo" name="dsgvo" required>Mit der Nutzung dieses Formulars erklären Sie sich mit der Speicherung und Verarbeitung Ihrer Daten durch diese Website einverstanden</label> (<a href="#" target="_blank" rel="noreferrer noopener">Datenschutzerklärung</a>).</small>
+      </div>
+      
+      <button type="submit" value="Abgeschickt">Abschicken</button>
+    
+    </form>
+
+    
+
+
+  </body>
+
+</html>

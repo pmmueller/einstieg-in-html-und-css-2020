@@ -1,0 +1,221 @@
+/**  
+  * Stand k18/uebungswebsite/anfang/ | k17/uebungswebsite/fertig/ 
+  */
+
+*, 
+*:before, 
+*:after { 
+  box-sizing: border-box; 
+}
+
+html { 
+  scroll-behavior: smooth; 
+}
+
+.site-nav li {
+	display: inline;
+	margin-right: 0.5rem;
+}
+
+.site-nav {
+	background-color: #333;
+  color: white; 
+	padding: 0.5rem;
+  margin: 1rem 0; 
+}
+.site-nav ul {
+  padding: 0; 
+  margin: 0; 
+}
+
+.site-nav a {
+  color: white; 
+  text-decoration: none; 
+}
+
+.site-footer {
+  font-size: smaller; 
+  background-color: #333;
+  color: white;
+  text-align: right; 
+  padding: 0.5rem;
+  margin-top: 2rem; 
+}
+
+.site-footer a {
+  color: white; 
+  text-decoration: none; 
+}
+
+.meta-nav ul {
+  padding: 0; 
+  margin: 0; 
+}
+.meta-nav li {
+	display: inline;
+	margin-right: 0.5rem;
+}
+
+.site-header h1 { 
+  margin-bottom: 0; 
+}
+.site-header p {
+  margin-top: 0; 
+}
+
+
+/* Grundlegende Gestaltung des Abschnitts mit den Infoboxen */ 
+.infoboxen {
+  background-color: #eee; 
+  padding: 1rem; 
+  margin-bottom: 1rem; 
+}
+
+.infobox {
+  text-align: center; 
+  background-color: white; 
+  padding: 1rem;
+  margin: 1rem; 
+}
+
+
+/* Grundlegende Gestaltung - aktueller Link in der Navigation */ 
+
+.current a {
+  text-decoration: underline; 
+}
+
+
+/* Grundlegende Gestaltung der Inhalte auf der Seite News */
+
+.beitragsliste h3, 
+.linklisten h3 {
+  padding-top: 0.5rem; 
+  border-top: 1px solid #eee; 
+  margin-bottom: 0.25rem; 
+}
+.beitragsliste h3 a { 
+  color: #333; 
+}
+.beitragsliste article, 
+.linklisten section { 
+  margin-bottom: 3rem; 
+}
+.beitragsinfo { 
+  color: #999; 
+}
+
+
+/* Grundlegende Gestaltung von Kontaktdaten und Kontaktformular */ 
+
+address {
+  font-style: normal; 
+}
+
+.kontaktformular form {
+  max-width: 400px; 
+  background-color: #eee; 
+  padding: 1rem; 
+}
+
+.kontaktformular div {
+  margin-bottom: 1rem; 
+}
+
+.kontaktformular label { 
+  cursor: pointer; 
+}      
+
+.kontaktformular label[for] { 
+  display: block; 
+}      
+      
+.kontaktformular button {
+  background-color: #0b74b8;
+  color: white; 
+  padding: 0.5rem; 
+  border: none;   
+  font-size: inherit; 
+  cursor: pointer; 
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, 
+               "Helvetica Neue", Helvetica, Arial, sans-serif, 
+               "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 1rem; 
+}
+
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.75rem; }
+h4 { font-size: 1.5rem; }
+h5 { font-size: 1.25rem; }
+h6 { font-size: 1rem; font-variant: small-caps; }
+
+.site-content { line-height: 1.5; }
+
+.site-content a:link { color: #0b74b8; } 
+.site-content a:visited { color: #36aade; } 
+.site-content a:hover, .site-content a:focus { color: #f5662e; }
+.site-content a:active { color: #d90000; }
+
+
+html { 
+  background-color: whitesmoke; 
+}
+
+body { 
+  background-color: white; 
+  color: black; 
+  max-width: 600px; 
+  margin: 1rem auto; 
+}
+
+.site-header { padding: 1rem 1rem 0 1rem; }
+.site-nav, .site-footer { padding: 0.5rem 1rem; }
+.site-content { padding: 0 1rem; }
+
+h1, h2, h3, h4, h5, h6,
+p, ul, ol, blockquote {
+  margin-top: 0; 
+}
+
+.kundenstimme {
+  text-align: center; 
+
+  background-color: #eee;
+  background-image: linear-gradient(to right, #eee, whitesmoke); 
+  box-shadow: 0 1px 3px rgb(51,51,51,0.3); 
+  
+  padding: 1rem;
+  border-left: 5px solid #0b74b8; 
+  margin: 0; 
+  margin-bottom: 1rem; 
+}
+.kundenstimme p {
+  font-size: 1.25rem; 
+  font-weight: bold; 
+}
+
+a[href^="http"]::after {
+  content: " \2197"; 
+}
+
+.visually-hidden { 
+  position: absolute; 
+  clip: rect(0 0 0 0); 
+
+  width: 1px; 
+  height: 1px; 
+  padding: 0; 
+  border: 0; 
+  margin: -1px; 
+
+  overflow: hidden; 
+} 
+
+.site-content {
+  scroll-margin-top: 1rem;
+}
+

@@ -1,0 +1,41 @@
+/* Stand k05/uebungswebsite/fertig/ - Links gestalten */ 
+
+nav li {
+	display: inline;
+	margin-right: 0.5rem;
+}
+
+nav {
+	background-color: black;
+  color: white; 
+	padding: 0.5rem;
+  margin: 1rem 0; 
+}
+nav ul {
+  padding: 0; 
+  margin: 0; 
+}
+
+nav a {
+  color: white; 
+  text-decoration: none; 
+}
+
+footer {
+  background-color: black;
+  color: white; 
+  text-align: right; 
+  padding: 0.5rem;
+}
+
+footer a {
+  color: white; 
+  text-decoration: none; 
+}
+
+html { 
+  scroll-behavior: smooth; 
+}
+
+
+
