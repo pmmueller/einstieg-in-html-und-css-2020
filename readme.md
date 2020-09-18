@@ -14,6 +14,6 @@ https://html-und-css.de/buch/
 
 ## Stand    
 Version 1    
-19. Juni 2020    
+2020-06-19    
    
 -- eof --- 
