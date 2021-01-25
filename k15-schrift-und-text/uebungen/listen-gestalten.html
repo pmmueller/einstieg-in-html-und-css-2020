@@ -1,4 +1,28 @@
 <!doctype html>
+<!-- 
+  Listen gestalten
+  Passt als h2-Abschnitt z. B. gut in Kapitel 15.x als »Listen gestalten« 
+  
+  1. list-style 
+  zum einfachen Gestalten 
+  Kurzschreibweise für list-style-type, -image und -position 
+  list-style-type: 
+  - ul: square, disc, circle etc. 
+  - ol: diverse andere 
+  
+  anderes Aufzählungszeichen: 
+  - mit - als <string> (nicht in Safari)
+  - als <string> geht auch Emoji (kann aber anders aussehen)
+
+
+  2. ::marker 
+  für die Farbe 
+
+
+
+  Die ganzen alten Tricks mit ::before und font-icon sind inzwischen eigentlich nicht mehr zeitgemäß.
+
+-->
 <html lang="de">
 
   <head>
@@ -9,27 +33,51 @@
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">    
 
-    <link href="css/style.css" rel="stylesheet">
-
     <style>
+           
+        body {
+          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+          font-size: 1rem; 
+          line-height: 1.5;
+          min-width: 320px; 
+          max-width: 600px; 
+          margin: 0 auto; 
+        }
+        
         /* Alle Listenelemente gestalten => ul/ol oder li; Farbe = Element */
-        ul.wochentage.einfach {
+        ul.einfach {
             list-style-type: square ;
         }
         
-        /* Einzelne Listenelemente gestaltn mit li mit Pseudoklasse */
-        .wochentage.einfach li:last-child {
+        /* Einzelne Listenelemente gestaltn mit li mit Pseudoklassen wie :last-child */
+        ul.einfach li:first-child {
             list-style-type: disc;
         }
-        /* mit Zeichenkette (nicht in Safari) */
-        .wochentage.einfach li:last-child {
-            list-style-type: "👍🏻 ";
+
+        /* mit Zeichenkette (nicht in Safari, square als Fallback) */
+        ul.wochentage.einfach li:last-child {
+            list-style-type: circle ;
+            list-style-type: "— ";
         }
         
-        /* Farbe gestalten mit ::marker */
-        .wochentage.pseudo li:last-child::marker {
-            color: red; 
+        /* Farbe gestalten mit Pseudo-Element ::marker */
+        ul.wochentage.marker li::marker {
+          color: hotpink; 
         }
+
+        /* ::marker in <ol> gestalten */
+        ol.wochentage.marker {
+          counter-increment: unset;
+        }
+        ol.wochentage.marker li {
+          counter-increment: kb-count-ol;
+        }
+
+        ol.wochentage.marker li::marker {
+          content: "(" counter(kb-count-ol) ") ";
+          color: cornflowerblue; 
+        }
+
 
     </style>
 
@@ -49,11 +97,13 @@
         <li>Freitag</li>
       </ul>   
 
+      <!-- Link zur Doku auf MDN -->
+
 
       <h2>Das Pseudo-Element <code>::marker</code></h2>
       <p>Das Pseudo-Element <code>::marker</code> bietet neue Möglichkeiten wie z. B. die Änderung der Farbe.</p>
 
-      <ul class="wochentage pseudo">	
+      <ul class="wochentage marker">	
         <li>Montag</li>	
         <li>Dienstag</li>	
         <li>Mittwoch</li>
@@ -61,6 +111,15 @@
         <li>Freitag</li>
       </ul> 
 
+      <ol class="wochentage marker">	
+        <li>Montag</li>	
+        <li>Dienstag</li>	
+        <li>Mittwoch</li>
+        <li>Donnerstag</li>
+        <li>Freitag</li>
+      </ol>
+
+      <!-- Link zur Doku auf MDN und zum WordPress-Beitrag auf kulturbanause.de --> 
 
 
   </body>
