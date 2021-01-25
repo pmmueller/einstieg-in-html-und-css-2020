@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="de">
+
+  <head>
+    <meta charset="utf-8">
+
+    <title>Listen gestalten – Einführung in HTML + CSS</title>
+    <meta name="description" content="Beschreibung dieser Webseite"> 
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">    
+
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        /* Alle Listenelemente gestalten => ul/ol oder li; Farbe = Element */
+        ul.wochentage.einfach {
+            list-style-type: square ;
+        }
+        
+        /* Einzelne Listenelemente gestaltn mit li mit Pseudoklasse */
+        .wochentage.einfach li:last-child {
+            list-style-type: disc;
+        }
+        /* mit Zeichenkette (nicht in Safari) */
+        .wochentage.einfach li:last-child {
+            list-style-type: "👍🏻 ";
+        }
+        
+        /* Farbe gestalten mit ::marker */
+        .wochentage.pseudo li:last-child::marker {
+            color: red; 
+        }
+
+    </style>
+
+  </head>
+
+  <body>
+
+      <h1>Listen gestalten</h1>
+      
+      <h2>Einfache Gestaltung: <code>list-style</code></h2>
+
+      <ul class="wochentage einfach">	
+        <li>Montag</li>	
+        <li>Dienstag</li>	
+        <li>Mittwoch</li>
+        <li>Donnerstag</li>
+        <li>Freitag</li>
+      </ul>   
+
+
+      <h2>Das Pseudo-Element <code>::marker</code></h2>
+      <p>Das Pseudo-Element <code>::marker</code> bietet neue Möglichkeiten wie z. B. die Änderung der Farbe.</p>
+
+      <ul class="wochentage pseudo">	
+        <li>Montag</li>	
+        <li>Dienstag</li>	
+        <li>Mittwoch</li>
+        <li>Donnerstag</li>
+        <li>Freitag</li>
+      </ul> 
+
+
+
+  </body>
+
+</html>
