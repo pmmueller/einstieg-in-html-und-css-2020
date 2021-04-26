@@ -18,7 +18,10 @@ Version 1.1
 
 ## Changelog 
 Meta Viewport in allen Dateien aktualisiert: 
-1. ohne shrink-to-fit=no 
-2. Position zwischen Zeichensatz und Seitentitel 
+- removed: shrink-to-fit=no 
+- changed: Position zwischen Zeichensatz und Seitentitel 
+
+K15 /uebungen
+- added: listen-gestalten.html
 
 -- eof --- 
