@@ -18,7 +18,6 @@ Version 1.1
 
 ## Changelog 
 
----- 
 Version 1.1 (2021-04-26)
 
 In allen HTML-Dateien 
