@@ -18,8 +18,9 @@ Version 1.1
 
 ## Changelog 
 
--- 
+---- 
 Version 1.1 (2021-04-26)
+
 In allen HTML-Dateien 
 - update: `<meta name="viewport" content="width=device-width, initial-scale=1">`
   - move: steht jetzt zwischen `<meta charset="utf-8">` und `<title>` 
