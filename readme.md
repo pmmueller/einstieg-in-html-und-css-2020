@@ -18,7 +18,8 @@ Version 1.1
 
 ## Changelog 
 In allen HTML-Dateien 
-- Meta Viewport aktualisiert 
+- updated: Meta Viewport  
+  - changed: initial-scale=1.0 to initial-scale=1
   - removed: shrink-to-fit=no 
   - changed: Position zwischen Zeichensatz und Seitentitel 
 
