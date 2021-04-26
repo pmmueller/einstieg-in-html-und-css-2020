@@ -17,9 +17,10 @@ Version 1.1
 2021-05-26    
 
 ## Changelog 
-Meta Viewport in allen Dateien aktualisiert: 
-- removed: shrink-to-fit=no 
-- changed: Position zwischen Zeichensatz und Seitentitel 
+In allen HTML-Dateien 
+- Meta Viewport aktualisiert 
+  - removed: shrink-to-fit=no 
+  - changed: Position zwischen Zeichensatz und Seitentitel 
 
 K15 /uebungen
 - added: listen-gestalten.html
