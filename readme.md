@@ -17,8 +17,9 @@ Version 1.1
 2021-04-26    
 
 ## Changelog 
+Änderungen in den Übungsdateien seit V1.0 
 
-Version 1.1 (2021-04-26)
+### Version 1.1 (2021-04-26)
 
 In allen HTML-Dateien 
 - update: `<meta name="viewport" content="width=device-width, initial-scale=1">`
