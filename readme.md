@@ -18,10 +18,10 @@ Version 1.1
 
 ## Changelog 
 In allen HTML-Dateien 
-- updated: Meta Viewport  
-  - moved: now between `<meta charset="utf-8">` and `<title>` 
-  - changed: `initial-scale=1.0` to `initial-scale=1`
-  - removed: `, shrink-to-fit=no`
+- update: `<meta name="viewport" content="width=device-width, initial-scale=1">`
+  - move: between `<meta charset="utf-8">` and `<title>` 
+  - change: `initial-scale=1.0` to `initial-scale=1`
+  - remove: `, shrink-to-fit=no`
 
 K15 /uebungen
 - added: `listen-gestalten.html`
