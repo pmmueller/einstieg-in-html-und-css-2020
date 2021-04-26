@@ -13,7 +13,12 @@ ISBN 978-3-8362-7646-7
 https://html-und-css.de/buch/ 
 
 ## Stand    
-Version 1    
-2020-06-19    
-   
+Version 1.1    
+2021-05-26    
+
+## Changelog 
+Meta Viewport in allen Dateien aktualisiert: 
+1. ohne shrink-to-fit=no 
+2. Position zwischen Zeichensatz und Seitentitel 
+
 -- eof --- 
