@@ -19,11 +19,11 @@ Version 1.1
 ## Changelog 
 In allen HTML-Dateien 
 - update: `<meta name="viewport" content="width=device-width, initial-scale=1">`
-  - move: between `<meta charset="utf-8">` and `<title>` 
+  - move: steht jetzt zwischen `<meta charset="utf-8">` und `<title>` 
   - change: `initial-scale=1.0` to `initial-scale=1`
   - remove: `, shrink-to-fit=no`
 
 K15 /uebungen
-- added: `listen-gestalten.html`
+- add: `listen-gestalten.html`
 
 -- eof --- 
