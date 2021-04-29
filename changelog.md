@@ -1,8 +1,7 @@
 # Changelog 
 Protokoll der Änderungen seit V1.0 
 
----- 
-Version 1.3 
+## Version 1.3 
 2021-04-29 
 
 K23 /uebungswebsite 
@@ -12,16 +11,15 @@ K23 /uebungswebsite
 
 Die Navigation der Übungswebsite in K24 und K25 wurde nicht geändert.  
 
------ 
-Version 1.2 
+
+## Version 1.2 
 2021-04-29 
 
 K15 - Listing 15.3 auf Seite 290 aktualisiert 
 - update: `font-family: ui-sans-serif, system-ui, -apple-system ...` 
 
 
------ 
-Version 1.1 
+## Version 1.1 
 2021-04-26 
 
 In allen HTML-Dateien 
@@ -32,3 +30,6 @@ In allen HTML-Dateien
 
 K15 /uebungen
 - add: `listen-gestalten.html`
+
+
+--- eof --- 
