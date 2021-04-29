@@ -13,8 +13,7 @@ ISBN 978-3-8362-7646-7
 https://html-und-css.de/buch/ 
 
 ---- 
-Stand
-
+## Stand
 V1.3 - 2021-04-29 
 Protokoll der Änderungen in changelog.md
 
