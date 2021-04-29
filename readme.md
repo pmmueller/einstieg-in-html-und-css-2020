@@ -14,7 +14,9 @@ https://html-und-css.de/buch/
 
 ---- 
 ## Stand
-V1.3 - 2021-04-29 
+V1.3 
+2021-04-29 
+
 Protokoll der Änderungen in changelog.md
 
 
