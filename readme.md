@@ -1,6 +1,7 @@
 # Einstieg in HTML und CSS   
 
 Übungsdateien zum Buch    
+V1.3 - 2021-04-29 
 
 Peter Müller    
 Einstieg in HTML und CSS 
@@ -13,19 +14,25 @@ ISBN 978-3-8362-7646-7
 https://html-und-css.de/buch/ 
 
 
-## Stand    
-Version 1.2    
-2021-04-29    
-
-
 ## Changelog 
-Änderungen in den Übungsdateien seit V1.0 
+Protokoll der Änderungen seit V1.0 
+
+
+### Version 1.3 
+2021-04-29 
+
+K23 /uebungswebsite 
+- add /progressive-enhancement als zusätzliches Beispiel 
+- Navigation in schmalem Viewport auch ohne JavaScript nutzbar 
+  https://html-und-css.de/responsive-navigation-progressive-enhancement/  
+
+Die Navigation der Übungswebsite in K24 und K25 wurde nicht geändert.  
 
 
 ### Version 1.2 
 2021-04-29 
 
-Listing 15.3 auf Seite 290 aktualisiert 
+K15 - Listing 15.3 auf Seite 290 aktualisiert 
 - update: `font-family: ui-sans-serif, system-ui, -apple-system ...` 
 
 

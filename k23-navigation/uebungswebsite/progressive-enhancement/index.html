@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="de" id="top" class="no-js">
+ 
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Startseite – Einführung in HTML + CSS</title>
+    <meta name="description" content="Beschreibung dieser Webseite"> 
+
+    <link href="css/style.css" rel="stylesheet">
+
+    <script>
+      document.documentElement.classList.remove('no-js');
+      document.documentElement.classList.add('js'); 
+    </script>
+
+  </head>
+
+  <body class="startseite">
+    
+    <header class="site-header">
+       <div class="inside">
+     
+        <h1 class="site-logo">
+          <img src="bilder/html+css-logo-444.png"
+               alt="HTML + CSS" 
+               width="222" 
+               height="33">             
+        </h1>
+
+        <p class="site-slogan">Webseiten erstellen und gestalten</p>
+
+      </div>
+    </header>
+
+    <nav class="site-nav">
+      <div class="inside">
+
+        <button class="menubutton" onclick="this.classList.toggle('showmenu')">Menü</button>
+        
+        <ul>	
+          <li class="current"><a href="index.html">Startseite</a></li>	
+          <li><a href="news.html">News</a></li>	
+          <li><a href="ueber-uns.html">Über uns</a></li>	
+          <li><a href="kontakt.html">Kontakt</a></li>	
+        </ul>	
+
+      </div>
+    </nav>
+
+    <main class="site-content" id="content">
+      
+      <section class="content-intro">
+        <div class="inside">
+      
+          <h2>Willkommen</h2>
+
+          <p>Webseiten bestehen aus <strong>rechteckigen Kästchen</strong>. Alles Runde ist entweder Trick, Grafik oder beides. </p>
+
+          <p>Beim Umgang mit diesen Kästchen haben <em>HTML</em> und <em>CSS</em> klar getrennte Aufgaben: </p>
+
+          <ul>	
+            <li>HTML-Elemente strukturieren die Webseite und erstellen die Kästchen.</li>	
+            <li>CSS-Regeln gestalten die Kästchen und deren Inhalte.</li>	
+          </ul> 
+
+          <p>Beide Sprachen arbeiten bei der Erstellung und Gestaltung von Webseiten eng zusammen. Besuchen Sie <a href="https://pmueller.de/" target="_blank" rel="noreferrer noopener">meine Website</a> für weitere Informationen.</p>
+
+        </div>
+      </section>
+      
+      <section class="infoboxen">
+        <div class="inside">
+          
+          <h2 class="visually-hidden">Die Bereiche der Website</h2>
+
+          <article class="infobox">
+
+              <h3>News</h3>
+
+              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+
+              <p><a href="news.html">Ab zum Blog</a></p>
+
+          </article>
+
+          <article class="infobox">
+
+            <h3>Über uns</h3>
+
+            <p>Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+
+            <p><a href="ueber-uns.html">Wer wir sind</a></p>        
+
+          </article>
+
+          <article class="infobox">
+
+            <h3>Kontakt</h3>
+
+            <p>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+
+            <p><a href="kontakt.html">Hallo sagen</a></p>        
+
+          </article>
+      
+        </div>
+      </section>
+      
+      <section class="kundenstimmen"> 
+        <div class="inside">
+          
+          <h2>Das sagen die Kunden</h2> 
+
+          <blockquote class="kundenstimme">
+            <p>Wundervoll leichter Einstieg</p>
+            <footer>&mdash; Anna</footer>
+          </blockquote>
+
+          <blockquote class="kundenstimme">
+            <p>Absolut genial</p>
+            <footer>&mdash; Belle</footer>
+          </blockquote>
+
+          <blockquote class="kundenstimme">
+            <p>Besser geht's nicht</p>
+            <footer>&mdash; Thomas</footer>
+          </blockquote>
+
+        </div>
+      </section> 
+  
+      
+    </main>
+
+    <footer class="site-footer">
+      <div class="inside">
+
+        <nav class="meta-nav">
+        
+          <ul>
+            <li><a href="impressum.html">Impressum</a></li>
+            <li><a href="datenschutz.html">Datenschutz</a></li>
+            <li><a href="#top">Nach oben</a></li>
+          </ul>
+
+        </nav>
+
+      </div>
+    </footer>
+
+  </body>
+
+</html>

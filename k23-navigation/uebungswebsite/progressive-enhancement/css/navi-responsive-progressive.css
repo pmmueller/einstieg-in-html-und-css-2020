@@ -1,0 +1,169 @@
+/* ================================
+
+navi-responsive-progressive.css  
+https://html-und-css.de/responsive-navigation-progressive-enhancement/ 
+
+Diese responsive Navigation basiert auf dem Prinzip des Progressive Enhancement: 
+
+1. In schmalen Viewports ohne JS
+  - Die Navigationsliste erscheint mit der grundlegenden Gestaltung. 
+  - Der Menübutton wird mit .no-js ausgeblendet. 
+
+2. In schmalen Viewports mit JS 
+  - ist nur der Menübutton zu sehen. 
+  - Die Navigationsliste wird durch Antippen/Anklicken eingeblendet 
+
+3. In Viewports > 600px 
+  - Die Navigationsliste wird horizontal dargestellt.
+  - JavaScript spielt hierbei keine Rolle. 
+
+=== 
+Sonstige Unterschiede zum Buch: 
+
+Hervorhebung in der vertikalen Navigationsliste ist full-width: 
+- .site-nav .inside hat kein horizontales Padding 
+- .site-nav benötigt dadurch keinen negativen Margin 
+- .menubutton 
+  - hat ein horizontales Padding von 1rem  
+  - dadurch wirkt die Ausrichtung am Three Lines icon bündig 
+  - funktioniert nur mit gleicher Hintergrundfarbe 
+
+Beim Einblenden der Navigationsliste 
+- mit overflow:initial hat transition anscheinend keine Wirkung 
+- overflow: hidden wird also im Rahmen der Kaskade vererbt  
+
+================================ */
+
+/** 
+  * Mobile first - die grundlegende Gestaltung der Navigation 
+  */
+ 
+.site-nav {
+  position: static; 
+  padding: 0; 
+  margin: 0; 
+}
+.site-nav .inside {
+  padding: 0; 
+}  
+.site-nav ul { 
+  display: flex; 
+  flex-flow: column; 
+  list-style: none; 
+  padding: 0; 
+  margin: 0; 
+}
+  
+.site-nav a {
+  display: block;
+  text-decoration: none; 
+  background: #333; 
+  color: white; 
+  padding: 0.5rem 1rem;
+}
+
+.site-nav a:hover, 
+.site-nav a:focus { 
+  background: #0b74b8; 
+  color: white;   
+}
+
+.site-nav .current a { 
+  background: #666; 
+  color: white; 
+}
+
+/** 
+* Kein JavaScript? Menübutton ausblenden 
+*/
+
+.no-js .menubutton { 
+  display: none; 
+}
+
+
+/** 
+  * JavaScript aktiv? 
+  * 1. Menübutton gestalten 
+  */
+
+.js .menubutton { 
+  display: flex; 
+  align-items: center; 
+  cursor: pointer; 
+  font: inherit; 
+  text-align: center; 
+  background: inherit; 
+  color: white; 
+  padding: 0.5rem 1rem; 
+  border: 0; 
+  margin: 0; 
+}
+
+.js .menubutton::before {
+  content: url(../bilder/menuburger.svg); 
+  width: 1rem; 
+  height: 1rem; 
+  margin-right: 0.25rem; 
+}
+
+/** 2. Navigationsliste ausblenden */
+
+  .js .site-nav ul {
+    max-height: 0; 
+    overflow: hidden; 
+    padding: 0; 
+  } 
+
+/** 3. Bei Berührung des Menübuttons die Navigationsliste einblenden */
+
+.js .menubutton.showmenu + ul {
+  max-height: 100rem; 
+  transition: max-height 500ms; 
+}
+
+.js .menubutton.showmenu::before { 
+  content: url(../bilder/menuclose.svg); 
+}
+
+
+/** 
+   * Viewport breiter als 600px? 
+   * Navigation horizontal darstellen 
+   */ 
+
+   @media screen and (min-width: 600px) {
+
+    .menubutton { display: none !important; } 
+    
+    .site-nav { position: sticky; }
+    
+    .site-nav ul { 
+      max-height: none !important; 
+      flex-flow: row; 
+      padding: 0; 
+    }
+  
+    .site-nav li {
+      flex: 1; 
+      max-width: 10rem; 
+      text-align: center; 
+      border-left: 1px solid #eee; 
+      margin: 0; 
+    }
+  
+    .site-nav li:first-child { 
+      margin: 0; 
+    }
+  
+    .site-nav li:last-child {
+      border-right: 1px solid #eee; 
+      margin: 0; 
+    }
+  
+    .site-nav a {
+      margin-right: 0; 
+      margin-left: 0; 
+    }
+  
+  }  /* Ende @media */ 
