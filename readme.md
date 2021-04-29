@@ -12,12 +12,22 @@ ISBN 978-3-8362-7646-7
 
 https://html-und-css.de/buch/ 
 
+
 ## Stand    
-Version 1.1    
-2021-04-26    
+Version 1.2    
+2021-04-29    
+
 
 ## Changelog 
 Änderungen in den Übungsdateien seit V1.0 
+
+
+### Version 1.2 
+2021-04-29 
+
+Listing 15.3 auf Seite 290 aktualisiert 
+- update: `font-family: ui-sans-serif, system-ui, -apple-system ...` 
+
 
 ### Version 1.1 
 2021-04-26 
