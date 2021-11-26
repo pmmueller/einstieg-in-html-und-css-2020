@@ -55,6 +55,7 @@ img, video {
 figure {
   margin-left: 0; 
   margin-right: 0; 
+  background: #333; 
 }
 
 address { 
@@ -96,6 +97,7 @@ figure[class*="float-"] {
 
 .float-umschliessen {
   overflow: hidden; 
+  background: white; 
 }
 
 @supports (display: flow-root) {
